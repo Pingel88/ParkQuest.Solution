@@ -112,7 +112,7 @@ namespace ParkQuest.Controllers
     
     private bool ParkExists(int id)
     {
-      return _db.Parks.Any(entry => entry.AnimalId == id);
+      return _db.Parks.Any(entry => entry.ParkId == id);
     }
   }
 }
