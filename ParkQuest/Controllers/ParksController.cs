@@ -13,7 +13,7 @@ namespace ParkQuest.Controllers
   {
     private readonly ParkQuestContext _db;
 
-    public AnimalsController(ParkQuestContext db)
+    public ParksController(ParkQuestContext db)
     {
       _db = db;
     }
