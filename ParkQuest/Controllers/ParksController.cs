@@ -20,7 +20,7 @@ namespace ParkQuest.Controllers
 
     // GET api/parks
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Park>>> Get(string name, string parktype, bool hasrestrooms)
+    public async Task<ActionResult<IEnumerable<Park>>> Get(string name, string parktype, string hasrestrooms)
     {
       var query = _db.Parks.AsQueryable();
 

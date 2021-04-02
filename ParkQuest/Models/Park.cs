@@ -10,8 +10,8 @@ namespace ParkQuest.Models
     public string Name { get; set; }
     [StringRange(AllowableValues = new[] { "State", "National" })]
     public string ParkType { get; set; }
-    [Required]
-    public bool HasRestrooms { get; set; }
+    [StringRange(AllowableValues = new[] { "Yes", "No", "Unknown" })]
+    public string HasRestrooms { get; set; }
   }
 
   public class StringRangeAttribute : ValidationAttribute
