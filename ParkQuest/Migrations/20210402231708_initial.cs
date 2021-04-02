@@ -15,7 +15,7 @@ namespace ParkQuest.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
                     ParkType = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
-                    HasRestrooms = table.Column<bool>(type: "tinyint(1)", nullable: false)
+                    HasRestrooms = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true)
                 },
                 constraints: table =>
                 {

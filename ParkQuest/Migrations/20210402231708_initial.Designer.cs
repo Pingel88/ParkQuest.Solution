@@ -8,8 +8,8 @@ using ParkQuest.Models;
 namespace ParkQuest.Migrations
 {
     [DbContext(typeof(ParkQuestContext))]
-    [Migration("20210402224717_update HasRestrooms property from boolean to string")]
-    partial class updateHasRestroomspropertyfrombooleantostring
+    [Migration("20210402231708_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
