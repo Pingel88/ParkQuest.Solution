@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -9,6 +11,7 @@ namespace ParkQuest.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
+  [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
   public class ParksController : ControllerBase
   {
     private readonly ParkQuestContext _db;
@@ -19,6 +22,7 @@ namespace ParkQuest.Controllers
     }
 
     // GET api/parks
+    [AllowAnonymous]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Park>>> Get(string name, string parktype, string hasrestrooms)
     {

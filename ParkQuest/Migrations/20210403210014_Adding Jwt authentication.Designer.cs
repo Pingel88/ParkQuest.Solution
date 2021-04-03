@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ParkQuest.Models;
 
 namespace ParkQuest.Migrations
 {
     [DbContext(typeof(ParkQuestContext))]
-    partial class ParkQuestContextModelSnapshot : ModelSnapshot
+    [Migration("20210403210014_Adding Jwt authentication")]
+    partial class AddingJwtauthentication
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
