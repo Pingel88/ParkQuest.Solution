@@ -60,7 +60,7 @@ In order to be authorized to use the POST, PUT, DELETE functionality of the API,
 * The token will be generated in the response. Copy and paste it as the Bearer Token paramenter in the Authorization tab.
 
 ### Endpoints
-Base URL: `https://localhost:5000`
+Base URL: `http://localhost:5000`
 
 #### Example Query
 ```
